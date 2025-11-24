@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Reptile Challenges (Experts Only)</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <!-- Load Inter font (default) and a serif font for a classic/paper look -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    
+</head>
+<body class="min-h-screen text-stone-800">
+
+    <div class="max-w-4xl mx-auto">
+        
+        <!-- === NAVIGATION / FIXED HEADER === -->
+        <nav class="sticky top-0 z-50 bg-red-700 text-white shadow-xl">
+            <div class="max-w-4xl mx-auto flex justify-center space-x-6 py-3 px-4 text-xs uppercase font-semibold tracking-wider">
+                <a href="index.html" class="hover:text-red-300 transition">index</a>
+                <a href="first_time.html" class="hover:text-red-300 transition">First_time</a>
+                <a href="w.html" class="text-green-900 font-bold underline transition">Contact</a>
+                <a href="advanced.html"class="text-red-300 font-bold underline transition">ADVANCED</a>
+                <a href="k.html"class="text-red-300 font-bold underline transition">.</a>
+            </div>
+        </nav>
+
+        <!-- === 1. HEADER / WARNING SECTION (Modified Home) === -->
+        <section id="intro" class="paper-bg relative pt-6 pb-20 px-4 mb-10 shadow-xl overflow-hidden border-4 border-red-700/50">
+            <!-- Header Content -->
+            <div class="relative z-10 text-center pt-10">
+                <h1 class="text-5xl md:text-6xl font-['Cinzel'] font-bold text-red-700 tracking-wider">
+                    The Advanced Keeper
+                </h1>
+                <p class="text-lg mt-2 italic text-red-900 font-bold bg-red-200 p-2 rounded-md inline-block border border-red-700 transform rotate-1">
+                    *** WARNING: EXPERTS ONLY. NOT FOR BEGINNERS. ***
+                </p>
+            </div>
+
+            <!-- Decoration: Tape -->
+            <div class="tape top-[10%] left-0 -rotate-12 transform origin-top-left"></div>
+            <div class="tape top-[10%] right-0 rotate-12 transform origin-top-right"></div>
+            
+            <!-- Red Tear Section -->
+            <div class="bg-red-700 relative px-8 pt-4 mt-20">
+                <div class="relative inline-block mx-auto torn-banner bg-white text-stone-800 shadow-md transform -rotate-1 translate-y-[-20px] md:translate-y-[-40px]">
+                    <p class="text-lg font-semibold tracking-wide py-1 px-4 text-red-700">Dangerous animals require dangerous commitment.</p>
+                </div>
+
+                <div class="pt-8 pb-16 text-white text-center">
+                    <h2 class="text-3xl font-bold mb-4">A Note on Commitment</h2>
+                    <p class="text-lg font-light max-w-2xl mx-auto">
+                        These species demand decades of dedicated husbandry, massive custom enclosures, and often require specialized permits and insurance. They are not 'pets' in the traditional sense, but life-long responsibilities. Research all local laws before considering any of the following species.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- === 2. ADVANCED KEEPER CONTENT === -->
+        <section id="top3" class="bg-dark-green pt-10 pb-20">
+             <div class="max-w-4xl mx-auto px-4 md:px-8">
+                <div class="paper-bg relative pt-6 pb-10 px-4 mb-10 shadow-xl overflow-hidden border-2 border-red-700/50 transform rotate-[1deg]">
+                     <div class="relative z-10 text-center pt-10">
+                        <h2 class="text-4xl font-['Cinzel'] font-bold text-red-700 tracking-wider">
+                            The Top 3 Advanced Challenges
+                        </h2>
+                    </div>
+
+                    <div class="tape bottom-[-10px] left-[50%] -rotate-6 transform origin-bottom-center"></div>
+
+                    <!-- Three Card Grid for Advanced Pets -->
+                    <div class="grid md:grid-cols-3 gap-8 mb-16 mt-12">
+                        
+                        <!-- 1. Monitor Lizards -->
+                        <div class="polaroid bg-red-50 border-4 border-red-700 transform rotate-1 hover:rotate-0 transition duration-300">
+                            <img src="monitor.png" 
+                                 alt="Picture of a large Monitor Lizard." 
+                                 class="w-full h-auto object-cover">
+                            <div class="p-2 text-center">
+                                <h4 class="font-bold text-xl mb-1 text-red-800">Monitor Lizards</h4>
+                                <p class="text-sm text-red-900 font-semibold">
+                                    **rating:** Requires enormous, custom enclosures (often room-sized) and respects the animal's powerful bite and claws. Many species are highly intelligent and require constant enrichment.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- 2. Cobras (Elapids) -->
+                        <div class="polaroid bg-red-50 border-4 border-red-700 transform rotate-[-2deg] hover:rotate-0 transition duration-300">
+                            <img src="cobra.png" 
+                                 alt="Picture of a Cobra with its hood flared." 
+                                 class="w-full h-auto object-cover">
+                            <div class="p-2 text-center">
+                                <h4 class="font-bold text-xl mb-1 text-red-800">Cobras (Venomous)</h4>
+                                <p class="text-sm text-red-900 font-semibold">
+                                    ***rating:*** Strict licensing, anti-venom protocols, and years of specialized experience are non-negotiable. Only to be kept by trained professionals who understand the extreme risks.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- 3. Green Anacondas -->
+                        <div class="polaroid bg-red-50 border-4 border-red-700 transform rotate-3 hover:rotate-0 transition duration-300">
+                            <img src="anaconda.png" 
+                                 alt="Picture of a massive Green Anaconda." 
+                                 class="w-full h-auto object-cover">
+                            <div class="p-2 text-center">
+                                <h4 class="font-bold text-xl mb-1 text-red-800">Green Anacondas</h4>
+                                <p class="text-sm text-red-900 font-semibold">
+                                    ****rating:**** Can exceed 20 feet and over 200 lbs. Requires professional handling and a lifetime commitment to specialized, water-based enclosures and large prey items.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-6 text-base leading-relaxed bg-red-100 border-2 border-red-700 mt-10">
+                        <h3 class="font-['Cinzel'] text-3xl font-bold mb-4 text-red-700 border-b border-red-400 pb-2">Final Warning</h3>
+                        <p class="font-light text-lg mb-4 text-red-900">
+                            Keeping animals of this size and risk level requires advanced skills, specialized equipment, and extensive legal compliance. Mismanagement of these species poses a significant threat not only to the animal's welfare but also to the safety of the keeper and the community. If you are not a licensed professional, **do not attempt to keep these reptiles.**
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- FOOTER SECTION -->
+        <footer class="text-center text-sm py-8 text-white opacity-70">
+            &copy; 2024 Rustic Reptiles. Advanced Section Only.
+        </footer>
+
+    </div>
+</body>
+</html>

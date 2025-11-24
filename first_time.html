@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First-Time Reptile Keeper</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <!-- Load Inter font (default) and a serif font for a classic/paper look -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    
+</head>
+<body class="min-h-screen text-stone-800">
+
+    <!-- Main Container -->
+    <div class="max-w-4xl mx-auto">
+        
+        <!-- HEADER/NAV SECTION (Beige Paper Background) -->
+        <header class="paper-bg relative pt-6 pb-20 px-4 mb-10 shadow-xl overflow-hidden">
+            <!-- Top Torn Edge Effect (Simulated) -->
+            <div class="absolute top-0 left-0 w-full h-1 bg-stone-700 opacity-20"></div>
+
+            <!-- Header Content -->
+            <div class="flex justify-end space-x-6 text-xs uppercase font-semibold tracking-wider mb-6">
+                <!-- Highlight current page with bold text -->
+                <a href="index.html" class="hover:text-green-700 transition">index</a>
+                <a href="first_time.html" class="text-green-900 font-bold underline transition">First-Time</a>
+                <a href="w.html" class="hover:text-green-700 transition">Contact</a>
+                <a href="advanced.html" class="hover:text-green-700 transition">ADVANCED</a>
+            </div>
+
+            <div class="relative z-10 text-center">
+                <h1 class="text-4xl md:text-5xl font-['Cinzel'] font-bold text-stone-800 tracking-wider">
+                    So, You Want a Reptile?
+                </h1>
+                <p class="text-lg mt-2 italic text-stone-600">The essential guide for beginners.</p>
+            </div>
+
+            <!-- Decoration: Tape and Sketch -->
+            <div class="tape top-[10%] right-0 rotate-12 transform origin-top-right"></div>
+            <div class="absolute top-1 left-4 w-20 h-20">
+                <!-- Simple SVG Sketch of a Gecko (Consistent with index.html) -->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="fill-current text-stone-700 opacity-70">
+                    <path d="M410.6 30.6c-20.4-20.4-53.6-20.4-74 0L192 175.1l-65.7-65.7c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 224l-32 32c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L224 274.7l32 32L308.7 377c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L336 256l32-32 50.7-50.7c20.4-20.4 20.4-53.6 0-74L352 79.1l58.6-58.6zM224 175.1l50.7-50.7c12.5-12.5 32.8-12.5 45.3 0s12.5 32.8 0 45.3L274.7 224l-50.7-50.7zM352 79.1L308.7 122.3l-50.7-50.7c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l50.7 50.7L352 79.1zM192 175.1l50.7-50.7c12.5-12.5 32.8-12.5 45.3 0s12.5 32.8 0 45.3L274.7 224l-50.7-50.7zM448 352v64c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V352c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/>
+                </svg>
+            </div>
+            
+            <!-- Leaves (Simulated with a shadow) -->
+            <div class="absolute top-0 right-0 w-32 h-32 opacity-20 bg-green-900 rounded-bl-full filter blur-sm"></div>
+
+        </header>
+
+        <!-- HERO SECTION (Dark Green Background with Tear) -->
+        <div class="hero-tear-bottom bg-dark-green relative px-8 pt-4">
+
+            <!-- "Choosing Your First Pet" Banner -->
+            <div class="relative inline-block mx-auto torn-banner bg-white text-stone-800 shadow-md transform -rotate-1 translate-y-[-40px]">
+                <p class="text-xl font-semibold tracking-wide py-1 px-4">Choosing Your First Pet</p>
+            </div>
+
+            <!-- Content Placeholder -->
+            <div class="pt-8 pb-16 text-white text-center">
+                <p class="text-2xl font-light max-w-2xl mx-auto">
+                    Starting your reptile journey is exciting! The key to success is choosing a hardy, docile species that has straightforward care requirements.
+                </p>
+            </div>
+        </div>
+
+        <!-- MAIN CONTENT SECTION (Dark Green Background) -->
+        <main class="bg-dark-green px-4 md:px-8 pt-10 pb-20">
+            <div class="max-w-3xl mx-auto">
+                
+                <!-- Title Banner: Top 3 -->
+                <div class="torn-banner bg-white text-stone-800 shadow-md mb-12 inline-block transform rotate-[-1deg]">
+                    <h2 class="text-3xl font-bold py-1 px-4">Our Top 3 Starter Reptiles</h2>
+                </div>
+
+                <!-- Three Card Grid for Starter Pets -->
+                <div class="grid md:grid-cols-3 gap-8 mb-16">
+                    
+                    <!-- 1. Corn Snake -->
+                    <div class="polaroid transform rotate-1 hover:rotate-0 transition duration-300">
+                        <img src="cornsnake.png" 
+                             alt="Picture of a bright orange Corn Snake." 
+                             class="w-full h-auto object-cover">
+                        <div class="p-2 text-center">
+                            <h3 class="font-bold text-xl mb-1 text-red-700">Corn Snake</h3>
+                            <p class="text-sm">The best choice for a first snake keeper. Easy to handle and rarely aggressive.</p>
+                        </div>
+                    </div>
+
+                    <!-- 2. Leopard Gecko -->
+                    <div class="polaroid transform rotate-[-2deg] hover:rotate-0 transition duration-300">
+                        <img src="leopard.png" 
+                             alt="Picture of a Leopard Gecko." 
+                             class="w-full h-auto object-cover">
+                        <div class="p-2 text-center">
+                            <h3 class="font-bold text-xl mb-1 text-yellow-700">Leopard Gecko</h3>
+                            <p class="text-sm">Small, friendly, and great for keepers who prefer Gekkonidae over snakes.</p>
+                        </div>
+                    </div>
+
+                    <!-- 3. Bearded Dragon -->
+                    <div class="polaroid transform rotate-3 hover:rotate-0 transition duration-300">
+                        <img src="dragon.png" 
+                             alt="Picture of a friendly Bearded Dragon." 
+                             class="w-full h-auto object-cover">
+                        <div class="p-2 text-center">
+                            <h3 class="font-bold text-xl mb-1 text-amber-900">Bearded Dragon</h3>
+                            <p class="text-sm">The 'puppy' of the reptile world—interactive and tolerate frequent handling.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Detailed Feature Section (Torn Paper Box) -->
+                <div class="paper-bg p-6 text-base leading-relaxed border-2 border-stone-700/50 shadow-2xl transform rotate-[-1deg]">
+                    <h3 class="font-['Cinzel'] text-3xl font-bold mb-4 text-dark-green">Why the Corn Snake Wins</h3>
+                    <div class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6">
+                        <div class="md:w-2/3">
+                            <p class="font-light text-lg mb-4">
+                                The Corn Snake is often cited as the perfect starting point for new keepers. They are natively found across the southeastern United States, making them highly adaptable to captive conditions. They reach a manageable adult size (usually 3 to 5 feet) and possess a remarkably docile temperament, meaning they rarely bite and are excellent candidates for handling.
+                            </p>
+                            <p class="font-light text-lg mb-4">
+                                **Simple Feeding:** They feed on readily available frozen/thawed mice, only requiring a meal every 7 to 10 days, which significantly simplifies weekly care compared to daily feeding lizards.
+                            </p>
+                            <p class="font-light text-lg">
+                                **Longevity and Hardiness:** Corn Snakes are robust, forgiving of minor care mistakes, and can live for 15 to 20 years with proper attention, offering a long and rewarding experience for the devoted keeper.
+                            </p>
+                        </div>
+                        <div class="md:w-1/3 flex justify-center">
+                            <!-- Corn Snake Image Placeholder on a crumpled paper background -->
+                            <div class="polaroid p-1 relative w-full max-w-[200px] shadow-lg transform rotate-3">
+                                <img src="cornsnake.png" 
+                                     alt="Close up of a red and orange Corn Snake." 
+                                     class="w-full h-full object-cover">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </main>
+
+        <!-- FOOTER SECTION (Consistent with index.html) -->
+        <footer class="text-center text-sm py-8 text-white opacity-70">
+            &copy; 2024 Rustic Reptiles. All Rights Reserved.
+        </footer>
+
+    </div>
+</body>
+</html>

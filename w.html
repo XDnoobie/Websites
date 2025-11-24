@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Rustic Reptiles</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <!-- Load Inter font (default) and a serif font for a classic/paper look -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    
+</head>
+<body class="min-h-screen text-stone-800">
+
+    <!-- Main Container -->
+    <div class="max-w-4xl mx-auto">
+        
+        <!-- HEADER/NAV SECTION -->
+        <header class="paper-bg relative pt-6 pb-20 px-4 mb-10 shadow-xl overflow-hidden">
+            <!-- Top Torn Edge Effect -->
+            <div class="absolute top-0 left-0 w-full h-1 bg-stone-700 opacity-20"></div>
+
+            <!-- Header Content -->
+            <div class="flex justify-end space-x-6 text-xs uppercase font-semibold tracking-wider mb-6">
+                <a href="index.html" class="hover:text-green-700 transition">index</a>
+                <a href="first_time.html" class="hover:text-green-700 transition">First_time</a>
+                <!-- Highlight current page -->
+                <a href="w.html" class="text-green-900 font-bold underline transition">Contact</a>
+                <a href="advanced.html"class="hover:text-red-300 transition">ADVANCED</a>
+                <a href="k.html" class="text-green-900 font-bold underline transition">.</a>
+
+
+            </div>
+
+            <div class="relative z-10 text-center">
+                <h1 class="text-4xl md:text-5xl font-['Cinzel'] font-bold text-stone-800 tracking-wider">
+                    Get In Touch
+                </h1>
+                <p class="text-lg mt-2 italic text-stone-600">Got a question for a future keeper?</p>
+            </div>
+
+            <!-- Decoration: Tape and Sketch -->
+            <div class="tape top-[10%] left-0 -rotate-12 transform origin-top-left"></div>
+            <div class="absolute top-1 right-4 w-20 h-20">
+                <!-- Simple SVG Sketch of a Chameleon (Placeholder for complexity) -->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="fill-current text-stone-700 opacity-70">
+                    <path d="M495.9 166.4l-79.1 11.3c-28.5 4.1-51.1 27.8-54 56.4L352 352 248.6 288 288 176c4.1-28.5-4.1-57.2-24.1-79.6l-50.7-50.7c-20.4-20.4-53.6-20.4-74 0L122.3 79.1l-58.6 58.6c-20.4 20.4-20.4 53.6 0 74l50.7 50.7c22.4 20 51.1 28.2 79.6 24.1L352 256 319.1 223.1c-28.5-4.1-51.1-27.8-54-56.4L256 128 175.1 192l-50.7 50.7c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L122.3 128 79.1 79.1c-20.4-20.4-53.6-20.4-74 0S-14.7 132.8 5.7 153.2L128 275.5V320c0 17.7 14.3 32 32 32H352c17.7 0 32-14.3 32-32V275.5L495.9 166.4z"/>
+                </svg>
+            </div>
+            
+        </header>
+
+        <!-- HERO SECTION (Dark Green Background with Tear) -->
+        <div class="hero-tear-bottom bg-dark-green relative px-8 pt-4">
+
+            <!-- "Send a Message" Banner -->
+            <div class="relative inline-block mx-auto torn-banner bg-white text-stone-800 shadow-md transform -rotate-1 translate-y-[-40px]">
+                <p class="text-xl font-semibold tracking-wide py-1 px-4">Send a Message</p>
+            </div>
+
+            <!-- Content Placeholder -->
+            <div class="pt-8 pb-16 text-white text-center">
+                <p class="text-xl font-light max-w-2xl mx-auto">
+                    We love hearing from fellow and future reptile enthusiasts! Use the form below or find our office hours.
+                </p>
+            </div>
+        </div>
+
+        <!-- MAIN CONTENT SECTION (Dark Green Background) -->
+        <main class="bg-dark-green px-4 md:px-8 pt-10 pb-20">
+            <div class="max-w-3xl mx-auto">
+                
+                <div class="flex flex-col md:flex-row gap-10">
+
+                    <!-- Left Column: Contact Form -->
+                    <div class="md:w-3/5 paper-bg p-6 border-2 border-stone-700/50 shadow-2xl transform rotate-1">
+                        <form id="contactForm" class="space-y-4">
+                            <div>
+                                <label for="name" class="block text-sm font-medium mb-1">Your Name</label>
+                                <input type="text" id="name" name="name" required
+                                       class="w-full p-2 rounded-md rustic-input">
+                            </div>
+
+                            <div>
+                                <label for="email" class="block text-sm font-medium mb-1">Email Address</label>
+                                <input type="email" id="email" name="email" required
+                                       class="w-full p-2 rounded-md rustic-input">
+                            </div>
+
+                            <div>
+                                <label for="subject" class="block text-sm font-medium mb-1">Subject</label>
+                                <select id="subject" name="subject" required
+                                        class="w-full p-2 rounded-md rustic-input appearance-none">
+                                    <option value="" disabled selected>Select a Topic</option>
+                                    <option value="beginner">Beginner Pet Advice (Corn Snake, Gecko, etc.)</option>
+                                    <option value="setup">Habitat Setup Questions</option>
+                                    <option value="advanced">Advanced Keeper Inquiry</option>
+                                    <option value="other">Other/General Inquiry</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label for="message" class="block text-sm font-medium mb-1">Your Message</label>
+                                <textarea id="message" name="message" rows="5" required
+                                          class="w-full p-2 rounded-md rustic-input"></textarea>
+                            </div>
+
+                            <button type="submit" 
+                                    class="w-full py-2 bg-mid-green text-white font-bold rounded-md hover:bg-dark-green transition duration-200 shadow-lg uppercase tracking-wider">
+                                Send Note
+                            </button>
+                        </form>
+                        
+                        <!-- Success/Error Message Area (Invisible by default) -->
+                        <div id="formMessage" class="mt-4 p-3 rounded-md hidden text-center font-semibold"></div>
+
+                    </div>
+
+                    <!-- Right Column: Info & Hours -->
+                    <div class="md:w-2/5 paper-bg p-6 border-2 border-stone-700/50 shadow-2xl transform rotate-[-2deg]">
+                        <h4 class="font-['Cinzel'] text-2xl font-bold mb-4 text-dark-green border-b pb-2 border-stone-500/50">Office & Hours</h4>
+                        <p class="mb-4 text-sm">
+                            Our team is based entirely online, but we're happy to answer emails during our digital office hours.
+                        </p>
+
+                        <ul class="space-y-3 text-sm mb-6">
+                            <li>
+                                <span class="font-bold text-dark-green">Email:</span>
+                                <a href="mailto:contact@rusticreptiles.com" class="underline hover:text-mid-green">oh8376173t@gamil.com</a>
+                            </li>
+                            <li>
+                                <span class="font-bold text-dark-green">Office Hours:</span>
+                                <p class="mt-1">Mon - Fri: 9:00 AM - 5:00 PM (EST)</p>
+                            </li>
+                            <li>
+                                <span class="font-bold text-dark-green">Mailing Address:</span>
+                                <p class="mt-1">Burma Bandula.st no.171</p>
+                            </li>
+                        </ul>
+                        
+                        <div class="mt-8 text-center">
+                            <!-- Placeholder for a small decorative image -->
+                            <img src="https://placehold.co/100x100/378044/ffffff?text=Scales" 
+                                 alt="Decorative scale pattern icon." 
+                                 class="mx-auto rounded-full opacity-70">
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </main>
+
+        <!-- FOOTER SECTION (Consistent with other pages) -->
+        <footer class="text-center text-sm py-8 text-white opacity-70">
+            &copy; 2024 Rustic Reptiles. All Rights Reserved.
+        </footer>
+
+    </div>
+
+    <!-- JavaScript for basic form handling -->
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const formMessage = document.getElementById('formMessage');
+            
+            // In a real application, you would send this data to a server here.
+            
+            formMessage.classList.remove('hidden', 'bg-red-200', 'text-red-800');
+            formMessage.classList.add('bg-light-green', 'text-dark-green');
+            formMessage.textContent = 'Thank you! Your note has been sent. We will respond soon.';
+            
+            // Reset the form after a short delay
+            setTimeout(() => {
+                document.getElementById('contactForm').reset();
+                formMessage.classList.add('hidden');
+            }, 5000); // Hide message after 5 seconds
+        });
+    </script>
+</body>
+</html>

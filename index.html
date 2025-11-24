@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reptiles - Mini Dinosaur Pets</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <!-- Load Inter font (default) and a serif font for a classic/paper look -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    
+</head>
+<body class="min-h-screen text-stone-800">
+
+    <!-- Main Container -->
+    <div class="max-w-4xl mx-auto">
+        
+        <!-- HEADER/NAV SECTION (Beige Paper Background) -->
+        <header class="paper-bg relative pt-6 pb-20 px-4 mb-10 shadow-xl overflow-hidden">
+            <!-- Top Torn Edge Effect (Simulated) -->
+            <div class="absolute top-0 left-0 w-full h-1 bg-stone-700 opacity-20"></div>
+
+            <!-- Header Content -->
+            <div class="flex justify-end space-x-6 text-xs uppercase font-semibold tracking-wider mb-6">
+                <a href="index.html" class="hover:text-green-700 transition">index</a>
+                <a href="first_time.html" class="hover:text-green-700 transition">First_time</a>
+                <a href="w.html" class="hover:text-green-700 transition">contact</a>
+                <a href="advanced.html" class="hover:text-green-700 transition">ADVANCED</a>
+                <a href="k.html" class="hover:text-green-700 transition">.</a>
+            </div>
+
+            <div class="relative z-10 text-center">
+                <h1 class="text-5xl md:text-6xl font-['Cinzel'] font-bold text-stone-800 tracking-wider">
+                    Reptiles
+                </h1>
+            </div>
+
+            <!-- Decoration: Tape and Sketch -->
+            <div class="tape top-[10%] left-0 -rotate-12 transform origin-top-left"></div>
+            <div class="absolute top-1 left-4 w-20 h-20">
+                <!-- Simple SVG Sketch of a Gecko -->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="fill-current text-stone-700 opacity-70">
+                    <path d="M410.6 30.6c-20.4-20.4-53.6-20.4-74 0L192 175.1l-65.7-65.7c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 224l-32 32c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L224 274.7l32 32L308.7 377c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L336 256l32-32 50.7-50.7c20.4-20.4 20.4-53.6 0-74L352 79.1l58.6-58.6zM224 175.1l50.7-50.7c12.5-12.5 32.8-12.5 45.3 0s12.5 32.8 0 45.3L274.7 224l-50.7-50.7zM352 79.1L308.7 122.3l-50.7-50.7c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l50.7 50.7L352 79.1zM192 175.1l50.7-50.7c12.5-12.5 32.8-12.5 45.3 0s12.5 32.8 0 45.3L274.7 224l-50.7-50.7zM448 352v64c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V352c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/>
+                </svg>
+            </div>
+            
+            <!-- Leaves (Simulated with a shadow) -->
+            <div class="absolute top-0 right-0 w-32 h-32 opacity-20 bg-green-900 rounded-bl-full filter blur-sm"></div>
+
+        </header>
+
+        <!-- HERO/CALL TO ACTION SECTION (Dark Green Background with Tear) -->
+        <div class="hero-tear-bottom bg-dark-green relative px-8 pt-4">
+
+            <!-- "Get a personal mini dinosaur!" Banner -->
+            <div class="relative inline-block mx-auto torn-banner bg-white text-stone-800 shadow-md transform -rotate-1 translate-y-[-20px] md:translate-y-[-40px]">
+                <p class="text-lg font-semibold tracking-wide py-1 px-4">Get a personal mini dinosaur!</p>
+            </div>
+
+            <!-- Iguana Image Placeholder -->
+            <div class="absolute top-[-10px] right-4 w-32 h-32 rounded-lg shadow-xl overflow-hidden transform rotate-3 z-20">
+                <img src="leopard.png" 
+                     onerror="this.onerror=null; this.src='https://placehold.co/150x150/5e8d64/ffffff?text=Iguana';" 
+                     alt="Close-up of a person holding a small green iguana." 
+                     class="w-full h-full object-cover">
+            </div>
+
+            <div class="pt-8 pb-16">
+                <!-- Empty space before the next section begins -->
+            </div>
+        </div>
+
+        <!-- MAIN CONTENT SECTION (Dark Green Background) -->
+        <main class="bg-dark-green px-4 md:px-8 pt-10 pb-20">
+            <div class="max-w-3xl mx-auto">
+                
+                <!-- "Why?" Title Banner -->
+                <div class="torn-banner bg-white text-stone-800 shadow-md mb-8 inline-block transform rotate-[-1deg]">
+                    <h2 class="text-3xl font-bold py-1 px-4">Why?</h2>
+                </div>
+
+                <div class="flex flex-col md:flex-row items-start space-y-8 md:space-y-0 md:space-x-8">
+                    
+                    <!-- Left Sketch Decoration -->
+                    <div class="hidden md:block w-1/4 pt-10 relative">
+                        <!-- Simple SVG Sketch of a Lizard/Iguana Head -->
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="fill-current text-green-700 opacity-50 transform -rotate-6">
+                            <path d="M495.9 166.4l-79.1 11.3c-28.5 4.1-51.1 27.8-54 56.4L352 352 248.6 288 288 176c4.1-28.5-4.1-57.2-24.1-79.6l-50.7-50.7c-20.4-20.4-53.6-20.4-74 0L122.3 79.1l-58.6 58.6c-20.4 20.4-20.4 53.6 0 74l50.7 50.7c22.4 20 51.1 28.2 79.6 24.1L352 256 319.1 223.1c-28.5-4.1-51.1-27.8-54-56.4L256 128 175.1 192l-50.7 50.7c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L122.3 128 79.1 79.1c-20.4-20.4-53.6-20.4-74 0S-14.7 132.8 5.7 153.2L128 275.5V320c0 17.7 14.3 32 32 32H352c17.7 0 32-14.3 32-32V275.5L495.9 166.4z"/>
+                        </svg>
+                    </div>
+
+                    <!-- Main Text Content Block (Beige Paper) -->
+                    <div class="paper-bg p-6 text-base leading-relaxed border-2 border-stone-700/50 shadow-2xl transform rotate-2 md:rotate-1 md:w-3/4">
+                        <p class="font-light text-lg mb-4">
+                            Do you want a pet that is low maintenance, interesting, and cute? If so, then you should consider getting a **reptile**.
+                        </p>
+                        <p class="font-light text-lg mb-4">
+                            Unlike traditional furry companions, reptiles require relatively minimal day-to-day attention once their habitat is properly set up. You won't need to worry about daily walks or constant shedding. Their primary needs revolve around maintaining the correct temperature gradients, humidity, and a consistent feeding schedule, which often occurs only a few times a week. This makes them perfect for busy individuals or apartment dwellers who want a fascinating animal without the high demands of a dog or cat.
+                        </p>
+                        <p class="font-light text-lg mb-4">
+                            Furthermore, reptiles are incredibly captivating to observe. From the majestic slow movements of a python to the rapid color changes of a chameleon , their behavior offers a unique window into the natural world. Watching your pet bask under its heat lamp, hunt, or shed its entire skin is a daily reminder that you are housing a direct descendant of the dinosaurs. They are quiet, clean, and truly miniature living fossils.
+                        </p>
+                        <p class="font-light text-lg">
+                            Ready to learn about which species might be right for your home?
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- FOOTER SECTION (Not yet implemented, keeping it simple) -->
+        <footer class="text-center text-sm py-8 text-white opacity-70">
+            &copy; 2024 Rustic Reptiles. All Rights Reserved.
+        </footer>
+
+    </div>
+</body>
+</html>

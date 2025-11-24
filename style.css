@@ -1,0 +1,273 @@
+
+        /* Define custom colors */
+        :root {
+            --color-paper: #e0d9b4; /* Beige/light brown paper */
+            --color-paper-dark: #b8ac82; /* Darker tone for texture/borders */
+            --color-dark-green: #2a6136;
+            --color-mid-green: #378044;
+            --color-light-green: #7ca878;
+        }
+
+        /* Base styles */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--color-dark-green);
+        }
+
+        /* Custom class for the textured paper background */
+        .paper-bg {
+            background-color: var(--color-paper);
+            /* Subtle texture/noise effect using a linear gradient */
+            background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.05) 25%, transparent 25%),
+                              linear-gradient(225deg, rgba(0, 0, 0, 0.05) 25%, transparent 25%),
+                              linear-gradient(45deg, rgba(0, 0, 0, 0.05) 25%, transparent 25%),
+                              linear-gradient(315deg, rgba(0, 0, 0, 0.05) 25%, var(--color-paper) 25%);
+            background-size: 8px 8px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Custom class for the tape effect */
+        .tape {
+            position: absolute;
+            width: 70px;
+            height: 15px;
+            background-color: rgba(184, 172, 130, 0.6); /* Semi-transparent paper color */
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            z-index: 10;
+        }
+
+        /* Custom class for the main hero tear effect */
+        .hero-tear-bottom {
+            background-color: var(--color-dark-green);
+            padding-bottom: 80px; /* Space for the tear */
+            position: relative;
+        }
+        /* SVG-like tear using a complex clip-path */
+        .hero-tear-bottom::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 80px;
+            background-color: var(--color-dark-green);
+            /* Custom clip path to simulate a tear - needs vendor prefixing for cross-browser, but modern browsers support standard clip-path */
+            clip-path: polygon(0 0, 100% 0, 100% 50%, 95% 70%, 90% 40%, 85% 65%, 80% 30%, 75% 60%, 70% 40%, 65% 75%, 60% 45%, 55% 80%, 50% 50%, 45% 70%, 40% 40%, 35% 65%, 30% 30%, 25% 60%, 20% 40%, 15% 75%, 10% 45%, 5% 80%, 0% 50%);
+            /* Add shadow to tear edge for depth */
+            box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        /* Styles for the torn paper banner */
+        .torn-banner {
+            background-color: var(--color-paper);
+            padding: 0.5rem 1.5rem;
+            position: relative;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            /* Use clip-path for a jagged edge */
+            clip-path: polygon(0 5%, 100% 0, 100% 95%, 95% 100%, 5% 100%, 0 95%);
+        }
+  
+        /* Define custom colors (consistent with index.html) */
+        :root {
+            --color-paper: #e0d9b4; /* Beige/light brown paper */
+            --color-paper-dark: #b8ac82; /* Darker tone for texture/borders */
+            --color-dark-green: #2a6136;
+            --color-mid-green: #378044;
+            --color-light-green: #7ca878;
+        }
+
+        /* Base styles */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--color-dark-green);
+        }
+
+        /* Custom class for the textured paper background (consistent with index.html) */
+        .paper-bg {
+            background-color: var(--color-paper);
+            background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.05) 25%, transparent 25%),
+                              linear-gradient(225deg, rgba(0, 0, 0, 0.05) 25%, transparent 25%),
+                              linear-gradient(45deg, rgba(0, 0, 0, 0.05) 25%, transparent 25%),
+                              linear-gradient(315deg, rgba(0, 0, 0, 0.05) 25%, var(--color-paper) 25%);
+            background-size: 8px 8px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Custom class for the tape effect (consistent with index.html) */
+        .tape {
+            position: absolute;
+            width: 70px;
+            height: 15px;
+            background-color: rgba(184, 172, 130, 0.6); /* Semi-transparent paper color */
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            z-index: 10;
+        }
+
+        /* Custom class for the main hero tear effect (consistent with index.html) */
+        .hero-tear-bottom {
+            background-color: var(--color-dark-green);
+            padding-bottom: 80px; /* Space for the tear */
+            position: relative;
+        }
+        /* SVG-like tear using a complex clip-path */
+        .hero-tear-bottom::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 80px;
+            background-color: var(--color-dark-green);
+            clip-path: polygon(0 0, 100% 0, 100% 50%, 95% 70%, 90% 40%, 85% 65%, 80% 30%, 75% 60%, 70% 40%, 65% 75%, 60% 45%, 55% 80%, 50% 50%, 45% 70%, 40% 40%, 35% 65%, 30% 30%, 25% 60%, 20% 40%, 15% 75%, 10% 45%, 5% 80%, 0% 50%);
+            box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        /* Styles for the torn paper banner (consistent with index.html) */
+        .torn-banner {
+            background-color: var(--color-paper);
+            padding: 0.5rem 1.5rem;
+            position: relative;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            clip-path: polygon(0 5%, 100% 0, 100% 95%, 95% 100%, 5% 100%, 0 95%);
+        }
+        
+        /* Style for image container to create a 'polaroid' look */
+        .polaroid {
+            background-color: #fff;
+            padding: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            position: relative;
+        }
+   
+        /* Define custom colors (consistent with other pages) */
+        :root {
+            --color-paper: #e0d9b4; /* Beige/light brown paper */
+            --color-paper-dark: #b8ac82; /* Darker tone for texture/borders */
+            --color-dark-green: #2a6136;
+            --color-mid-green: #378044;
+            --color-light-green: #7ca878;
+        }
+
+        /* Base styles */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--color-dark-green);
+        }
+
+        /* Custom class for the textured paper background */
+        .paper-bg {
+            background-color: var(--color-paper);
+            background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.05) 25%, transparent 25%),
+                              linear-gradient(225deg, rgba(0, 0, 0, 0.05) 25%, transparent 25%),
+                              linear-gradient(45deg, rgba(0, 0, 0, 0.05) 25%, transparent 25%),
+                              linear-gradient(315deg, rgba(0, 0, 0, 0.05) 25%, var(--color-paper) 25%);
+            background-size: 8px 8px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Custom class for the tape effect */
+        .tape {
+            position: absolute;
+            width: 70px;
+            height: 15px;
+            background-color: rgba(184, 172, 130, 0.6); 
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            z-index: 10;
+        }
+
+        /* Custom class for the main hero tear effect */
+        .hero-tear-bottom {
+            background-color: var(--color-dark-green);
+            padding-bottom: 80px; 
+            position: relative;
+        }
+        /* SVG-like tear using a complex clip-path */
+        .hero-tear-bottom::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 80px;
+            background-color: var(--color-dark-green);
+            clip-path: polygon(0 0, 100% 0, 100% 50%, 95% 70%, 90% 40%, 85% 65%, 80% 30%, 75% 60%, 70% 40%, 65% 75%, 60% 45%, 55% 80%, 50% 50%, 45% 70%, 40% 40%, 35% 65%, 30% 30%, 25% 60%, 20% 40%, 15% 75%, 10% 45%, 5% 80%, 0% 50%);
+            box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        /* Styles for the torn paper banner */
+        .torn-banner {
+            background-color: var(--color-paper);
+            padding: 0.5rem 1.5rem;
+            position: relative;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            clip-path: polygon(0 5%, 100% 0, 100% 95%, 95% 100%, 5% 100%, 0 95%);
+        }
+
+        /* Custom input style to look hand-written/less digital */
+        .rustic-input {
+            background-color: #f7f3e8; /* Lighter off-white background */
+            border: 1px solid var(--color-paper-dark);
+            box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+            transition: all 0.2s;
+        }
+
+        .rustic-input:focus {
+            outline: none;
+            border-color: var(--color-dark-green);
+            box-shadow: 0 0 0 2px rgba(42, 97, 54, 0.3);
+        }
+        
+        /* --- RUSTIC STYLES & COLOR PALETTE --- */
+        :root {
+            --color-paper: #e0d9b4; /* Beige/light brown paper */
+            --color-paper-dark: #b8ac82; /* Darker tone for texture/borders */
+            --color-dark-green: #2a6136; /* Main background color */
+            --color-red-danger: #b91c1c; /* Tailwind Red-700 equivalent */
+            --color-red-light: #fef2f2; /* Tailwind Red-50 equivalent */
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--color-dark-green);
+            scroll-behavior: smooth;
+        }
+
+        .paper-bg {
+            background-color: var(--color-paper);
+            /* Subtle texture/noise effect */
+            background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.05) 25%, transparent 25%),
+                              linear-gradient(225deg, rgba(0, 0, 0, 0.05) 25%, transparent 25%),
+                              linear-gradient(45deg, rgba(0, 0, 0, 0.05) 25%, transparent 25%),
+                              linear-gradient(315deg, rgba(0, 0, 0, 0.05) 25%, var(--color-paper) 25%);
+            background-size: 8px 8px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+        }
+        
+        .tape {
+            position: absolute;
+            width: 70px;
+            height: 15px;
+            background-color: rgba(220, 38, 38, 0.6); /* Red 600 */
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            z-index: 10;
+        }
+
+        .torn-banner {
+            background-color: var(--color-paper);
+            padding: 0.5rem 1.5rem;
+            position: relative;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            clip-path: polygon(0 5%, 100% 0, 100% 95%, 95% 100%, 5% 100%, 0 95%);
+        }
+        
+        .polaroid {
+            background-color: #fff;
+            padding: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            position: relative;
+        }
+    
+    
